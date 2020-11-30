@@ -5,6 +5,7 @@ import lunr from 'lunr';
 import { createPopper } from '@popperjs/core';
 import parsePhoneNumber from 'libphonenumber-js'
 import { inject as service } from '@ember/service';
+import moment from 'moment';
 
 export default class ApplicationController extends Controller {
   @service csv;
@@ -16,5 +17,6 @@ export default class ApplicationController extends Controller {
     console.log(`lunr`, lunr);
     console.log(`popperjs`, createPopper);
     console.log(`phonenumber`, parsePhoneNumber);
+    console.log(`moment`, moment);
   }
 }
